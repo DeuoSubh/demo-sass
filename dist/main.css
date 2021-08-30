@@ -1,0 +1,203 @@
+.w_f {
+  width: 50%;
+  float: left; }
+
+.h2, .need h2, .services h2, .download h2, .contact h2 {
+  font-size: 3rem;
+  color: white; }
+
+.span, .need span, .services span, .contact span {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #f05f40;
+  margin: 1rem auto; }
+
+.p, .need p, .contact p {
+  margin: 1rem;
+  color: white;
+  line-height: 2; }
+
+.button, .need button, .download button {
+  background-color: #f05f40;
+  color: white;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out; }
+  .button:hover, .need button:hover, .download button:hover {
+    background-color: white;
+    color: #f05f40; }
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0; }
+
+.header {
+  z-index: 999; }
+  .header .navbar-dark .navbar-brand {
+    color: white;
+    font-size: 24px; }
+    .header .navbar-dark .navbar-brand:hover {
+      color: #f05f40;
+      transition: all 0.5s ease-in-out; }
+  .header .navbar-nav li .nav-link {
+    font-size: 18px;
+    color: #c9c5bd;
+    transition: all 0.5s ease-in-out; }
+    .header .navbar-nav li .nav-link:hover {
+      color: #f05f40;
+      transition: all 0.5s ease-in-out; }
+
+.section {
+  background: url("../Desgin/picture/windows-10-uhd-4k-wallpaper.jpg");
+  height: 100vh;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  min-height: 100%; }
+  .section .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); }
+  .section .section-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section .section-content h2 {
+      font-size: 3rem;
+      color: white; }
+    .section .section-content span {
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: #f05f40;
+      margin: 1rem auto; }
+    .section .section-content p {
+      margin: 1rem;
+      color: white;
+      line-height: 2; }
+    .section .section-content button {
+      background-color: #f05f40;
+      color: white;
+      border-radius: 15px;
+      text-transform: uppercase;
+      font-size: 13px;
+      padding: 10px 15px;
+      margin-top: 15px;
+      border: 0;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out; }
+      .section .section-content button:hover {
+        background-color: white;
+        color: #f05f40; }
+
+.need {
+  text-align: center;
+  padding: 6rem 0;
+  background-color: #f05f40; }
+  .need span {
+    background: #fff; }
+  .need button {
+    background: #fff;
+    color: black; }
+
+.services {
+  padding: 6rem 0;
+  background-color: white;
+  text-align: center; }
+  .services h2 {
+    color: #212567; }
+  .services span {
+    margin-bottom: 50px; }
+  .services .services-icon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; }
+    .services .services-icon h3 {
+      color: #212567; }
+    .services .services-icon i {
+      color: #f05f40;
+      margin-bottom: 30px;
+      font-size: 40px; }
+    .services .services-icon p {
+      line-height: 2;
+      letter-spacing: 2; }
+
+.services-icon .fa-1 {
+  color: #f05f40; }
+
+.services-icon .fa-2 {
+  color: #f05f40; }
+
+.services-icon .fa-3 {
+  color: #f05f40; }
+
+.image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 0; }
+  .image > div {
+    position: relative; }
+    .image > div img {
+      width: 100%; }
+    .image > div::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(240, 97, 66, 0.6);
+      content: '';
+      opacity: 0;
+      transition: all 0.5s ease-in-out; }
+    .image > div:hover::after {
+      opacity: 1; }
+
+.download {
+  text-align: center;
+  background-color: #000;
+  color: white;
+  padding: 6rem 0; }
+  .download h2 {
+    margin-bottom: 30px; }
+
+.contact {
+  text-align: center;
+  padding: 6rem 0; }
+  .contact h2 {
+    color: #000; }
+  .contact p {
+    color: #000; }
+  .contact span {
+    margin-bottom: 30px;
+    margin-top: 50px; }
+  .contact .contact-item .item {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 10px; }
+    .contact .contact-item .item i {
+      color: #f05f40;
+      margin-bottom: 30px; }
+    .contact .contact-item .item p {
+      margin-top: 10px; }
+
+.footer {
+  background-color: #f05f40;
+  color: #FFF;
+  padding: 20px;
+  font-size: 18px; }
